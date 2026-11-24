@@ -1,0 +1,36 @@
+<!-- floating-coffee.svg: Floating animated coffee cup sticker -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 72" shape-rendering="crispEdges" width="64" height="72">
+  <defs>
+    <style>
+      .cup { animation: float-cup 3s ease-in-out infinite; transform-origin: 32px 50px; }
+      .steam1 { animation: steam 2s ease-out infinite; }
+      .steam2 { animation: steam 2s ease-out infinite 0.5s; }
+      .steam3 { animation: steam 2s ease-out infinite 1s; }
+      @keyframes float-cup { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+      @keyframes steam { 0%{opacity:0;transform:translateY(0)} 40%{opacity:0.8} 100%{opacity:0;transform:translateY(-14px) scaleX(1.4)} }
+    </style>
+  </defs>
+  <!-- steam wisps -->
+  <rect class="steam1" x="22" y="12" width="4" height="8" fill="#D0D0D0" rx="2"/>
+  <rect class="steam2" x="30" y="8"  width="4" height="10" fill="#D0D0D0" rx="2"/>
+  <rect class="steam3" x="38" y="12" width="4" height="8"  fill="#D0D0D0" rx="2"/>
+  <g class="cup">
+    <!-- cup body -->
+    <rect x="12" y="28" width="40" height="30" fill="#8B5A52"/>
+    <!-- cup taper at bottom -->
+    <rect x="16" y="52" width="32" height="8" fill="#7A4A42"/>
+    <!-- handle -->
+    <rect x="50" y="34" width="6" height="4" fill="#7A4A42"/>
+    <rect x="50" y="46" width="6" height="4" fill="#7A4A42"/>
+    <rect x="52" y="34" width="4" height="16" fill="#7A4A42"/>
+    <!-- liquid surface -->
+    <rect x="14" y="30" width="36" height="6" fill="#C0784A"/>
+    <!-- emerald accent stripe -->
+    <rect x="12" y="44" width="40" height="4" fill="#478CBF" opacity="0.5"/>
+    <!-- cup bottom plate -->
+    <rect x="8"  y="58" width="48" height="6" fill="#555"/>
+    <rect x="10" y="62" width="44" height="2" fill="#444"/>
+    <!-- shine -->
+    <rect x="16" y="32" width="4" height="10" fill="#FFFFFF" opacity="0.15"/>
+  </g>
+</svg>

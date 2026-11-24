@@ -1,0 +1,40 @@
+<!-- sticker-code.svg: Floating code bracket sticker -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 60" shape-rendering="crispEdges" width="72" height="60">
+  <defs>
+    <style>
+      .code-block { animation: float-code 3.5s ease-in-out infinite; transform-origin: 36px 30px; }
+      .ln1 { animation: type-line 2s step-end infinite; }
+      .ln2 { animation: type-line 2s step-end infinite 0.4s; }
+      .ln3 { animation: type-line 2s step-end infinite 0.8s; }
+      .ln4 { animation: type-line 2s step-end infinite 1.2s; }
+      @keyframes float-code { 0%,100%{transform:translateY(0) rotate(2deg)} 50%{transform:translateY(-7px) rotate(-2deg)} }
+      @keyframes type-line { 0%,100%{opacity:1} 60%{opacity:0.3} }
+    </style>
+  </defs>
+  <g class="code-block">
+    <!-- Terminal window frame -->
+    <rect x="2"  y="2"  width="68" height="56" rx="4" fill="#1A1A2E"/>
+    <rect x="2"  y="2"  width="68" height="14" rx="4" fill="#252545"/>
+    <!-- Traffic lights -->
+    <rect x="8"  y="7"  width="6" height="6" rx="3" fill="#FF5F57"/>
+    <rect x="18" y="7"  width="6" height="6" rx="3" fill="#FEBC2E"/>
+    <rect x="28" y="7"  width="6" height="6" rx="3" fill="#28C840"/>
+    <!-- Code lines -->
+    <rect class="ln1" x="8"  y="22" width="12" height="3" fill="#C792EA"/>
+    <rect class="ln1" x="22" y="22" width="20" height="3" fill="#82AAFF"/>
+    <rect class="ln1" x="44" y="22" width="6"  height="3" fill="#C792EA"/>
+    <rect class="ln2" x="12" y="29" width="8"  height="3" fill="#478CBF"/>
+    <rect class="ln2" x="22" y="29" width="16" height="3" fill="#6BCF6B"/>
+    <rect class="ln2" x="40" y="29" width="10" height="3" fill="#FFCB6B"/>
+    <rect class="ln3" x="12" y="36" width="22" height="3" fill="#82AAFF"/>
+    <rect class="ln3" x="36" y="36" width="8"  height="3" fill="#C792EA"/>
+    <rect class="ln4" x="8"  y="43" width="6"  height="3" fill="#C792EA"/>
+    <rect class="ln4" x="16" y="43" width="12" height="3" fill="#82AAFF"/>
+    <!-- Cursor -->
+    <rect x="30" y="43" width="3" height="3" fill="#FFF" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <!-- Left bracket -->
+    <rect x="2" y="18" width="4" height="34" fill="#478CBF" opacity="0.6"/>
+  </g>
+</svg>

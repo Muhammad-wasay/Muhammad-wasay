@@ -1,0 +1,39 @@
+<!-- sticker-controller.svg: Floating game controller sticker -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 56" shape-rendering="crispEdges" width="80" height="56">
+  <defs>
+    <style>
+      .ctrl { animation: float-ctrl 2.8s ease-in-out infinite; transform-origin: 40px 28px; }
+      .btn-ab { animation: press-btn 1s step-end infinite; }
+      .btn-xy { animation: press-btn 1s step-end infinite 0.4s; }
+      @keyframes float-ctrl { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-6px) rotate(-3deg)} }
+      @keyframes press-btn { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    </style>
+  </defs>
+  <g class="ctrl">
+    <!-- body -->
+    <rect x="6"  y="12" width="68" height="32" rx="8" fill="#222"/>
+    <rect x="8"  y="14" width="64" height="28" rx="6" fill="#2D2D2D"/>
+    <!-- left grip -->
+    <rect x="4"  y="28" width="12" height="18" rx="4" fill="#222"/>
+    <!-- right grip -->
+    <rect x="64" y="28" width="12" height="18" rx="4" fill="#222"/>
+    <!-- D-pad -->
+    <rect x="16" y="22" width="6" height="4" fill="#444"/>
+    <rect x="20" y="18" width="4" height="12" fill="#444"/>
+    <!-- ABXY -->
+    <rect class="btn-ab" x="52" y="18" width="7" height="7" fill="#6BCF6B"/>
+    <rect class="btn-xy" x="60" y="24" width="7" height="7" fill="#CF6B6B"/>
+    <rect class="btn-ab" x="52" y="30" width="7" height="7" fill="#6BAACF"/>
+    <rect class="btn-xy" x="44" y="24" width="7" height="7" fill="#CFCF6B"/>
+    <!-- Center -->
+    <rect x="34" y="22" width="5" height="4" fill="#333"/>
+    <rect x="41" y="22" width="5" height="4" fill="#333"/>
+    <!-- Joysticks -->
+    <rect x="22" y="32" width="10" height="10" rx="5" fill="#444"/>
+    <rect x="48" y="32" width="10" height="10" rx="5" fill="#444"/>
+    <!-- Accent line -->
+    <rect x="10" y="38" width="60" height="2" fill="#478CBF" opacity="0.6"/>
+    <!-- Logo area -->
+    <rect x="35" y="30" width="10" height="4" fill="#478CBF" opacity="0.4"/>
+  </g>
+</svg>
